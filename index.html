@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyun Galerim </title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0;
+      background: #161b22;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .game-card {
+      background: #1c2128;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+    .game-card:hover {
+      transform: scale(1.03);
+    }
+    .game-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      color: #58a6ff;
+    }
+    .card-content p {
+      font-size: 0.9rem;
+      color: #8b949e;
+      min-height: 60px;
+    }
+    .play-button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #238636;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .play-button:hover {
+      background: #2ea043;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1> Oyun Galerim</h1>
+  <p>GitHub Pages üzerinde geliştirdiğim oyunlar</p>
+</header>
+
+<main class="gallery">
+
+  <div class="game-card">
+    <img src="oyun1.png" alt="Oyun 1 Görseli">
+    <div class="card-content">
+      <h3>Uzay Kaşifi</h3>
+      <p>Basit ama bağımlılık yapan bir uzay macerası. Asteroitlerden kaç ve yıldızları topla!</p>
+      <a href="https://kullaniciadi.github.io/uzay-kasifi" class="play-button" target="_blank">Oyna</a>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <img src="oyun2.png" alt="Oyun 2 Görseli">
+    <div class="card-content">
+      <h3>Blok Yığını</h3>
+      <p>Reflekslerini test et! Blokları tam hizalayarak kuleyi yükselt.</p>
+      <a href="https://kullaniciadi.github.io/blok-yigini" class="play-button" target="_blank">Oyna</a>
+    </div>
+  </div>
+
+  <!-- Yeni oyun eklemek için bu bloğu kopyala -->
+  <!--
+  <div class="game-card">
+    <img src="oyun3.png" alt="Oyun 3 Görseli">
+    <div class="card-content">
+      <h3>Oyun Adı</h3>
+      <p>Kısa açıklama buraya.</p>
+      <a href="https://kullaniciadi.github.io/oyun-linki" class="play-button" target="_blank">Oyna</a>
+    </div>
+  </div>
+  -->
+
+</main>
+
+</body>
+</html>
